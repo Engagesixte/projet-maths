@@ -1,0 +1,148 @@
+/* style.css */
+
+/* --- Structure globale --- */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #00695c;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+nav {
+    background-color: #26a69a;
+    padding: 0.5em;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1em;
+    font-weight: bold;
+}
+
+/* Menu déroulant dans la barre de navigation */
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.menu-btn {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 1em;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #26a69a;
+    min-width: 180px;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.3);
+    z-index: 1;
+    border-radius: 4px;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 0.5em 1em;
+    display: block;
+    text-align: left;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #1e8e86;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* --- Contenu principal --- */
+main {
+    background-color: #fff;
+    max-width: 700px;
+    margin: 2em auto;
+    padding: 2em;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+h1 {
+	text-align: center;
+	color: white;
+} 
+
+
+h2 {
+    text-align: center;
+    color: #00796b;
+}
+
+input[type="number"] {
+    padding: 0.5em;
+    margin-top: 1em;
+    width: 150px;
+    font-size: 1em;
+}
+
+button {
+    padding: 0.5em 1em;
+    margin-top: 1em;
+    background-color: #00796b;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #004d40;
+}
+
+p#resultat {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 1em;
+}
+
+/* Animation de rebond */
+@keyframes rebond {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-15px); }
+  100% { transform: translateY(0); }
+}
+
+.math-hero {
+  width: 120px;
+  margin-top: 1em;
+  animation: rebond 0.6s ease-in-out 2;
+}
+
+
+/* --- Pied de page --- */
+footer {
+    text-align: center;
+    padding: 1em;
+    font-size: 0.9em;
+    background-color: #e0f2f1;
+    color: #004d40;
+}

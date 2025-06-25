@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Travaillons les multiplications</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script>
+        window.onload = () => genereQuestion("mul");
+        function verifieMultiplication() {
+            verifieReponse("mul");
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>Travaillons les multiplications</h1>
+    </header>
+
+    <nav>
+        <a href="travaillonsMathematiques.html" target="_blank">Accueil</a>
+        <div class="dropdown">
+    <a href="#" class="menu-btn">Additions ▼</a>
+    <div class="dropdown-content">
+        <a href="travaillonsAdditions20.html" target="_blank">Additions 0–20</a>
+        <a href="travaillonsAdditions100.html" target="_blank">Additions 0–100</a>
+    </div>
+</div>
+
+        <a href="travaillonsSoustractions.html" target="_blank">Soustractions</a>
+        <a href="travaillonsMultiplications.html" target="_blank">Multiplications</a>
+        <a href="travaillonsDivisions.html" target="_blank">Divisions</a>
+    </nav>
+
+    <main>
+        <p><span id="p1"></span> x <span id="p2"></span> = ?</p>
+        <input type="number" id="reponseEleve" placeholder="Ta réponse ici">
+        <button onclick="verifieMultiplication()">Vérifier</button>
+        <p id="resultat"></p>
+        <button onclick="genereQuestion('mul')">Nouvelle question</button>
+        <p>Score : <span id="scoreAffiche">0</span> / <span id="compteurQuestions">0</span></p>
+		<img id="mathBravissimo" src="images/bravo.png" alt="Mathématix est fier de toi !" class="math-hero" style="display: none;">
+		<img id="mathOops" src="images/oups.png" alt="Tu feras mieux la prochaine fois !" class="math-hero" style="display: none;">
+	</main>
+
+    <footer>
+        <!-- Tu peux ajouter un petit message ici -->
+    </footer>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Travaillons les additions 20</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script>
+        window.onload = () => genereQuestion("add");
+        function verifieAddition() {
+            verifieReponse("add");
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>Travaillons les additions</h1>
+    </header>
+
+    <nav>
+        <a href="travaillonsMathematiques.html" target="_blank">Accueil</a>
+        <div class="dropdown">
+    <a href="#" class="menu-btn">Additions ▼</a>
+    <div class="dropdown-content">
+        <a href="travaillonsAdditions20.html" target="_blank">Additions 0–20</a>
+        <a href="travaillonsAdditions100.html" target="_blank">Additions 0–100</a>
+    </div>
+</div>
+
+        <a href="travaillonsSoustractions.html" target="_blank">Soustractions</a>
+        <a href="travaillonsMultiplications.html" target="_blank">Multiplications</a>
+        <a href="travaillonsDivisions.html" target="_blank">Divisions</a>
+    </nav>
+
+    <main>
+        <h2>Travaillons nos additions de 0 à 20</h2>
+        <p><span id="p1"></span> + <span id="p2"></span> = ?</p>
+        <input type="number" id="reponseEleve" placeholder="Ta réponse ici">
+        <button onclick="verifieReponse('add')">Vérifier</button>
+        <p id="resultat"></p>
+        <button onclick="genereQuestion('add')">Nouvelle question</button>
+        <p>Score : <span id="scoreAffiche">0</span> / <span id="compteurQuestions">0</span></p>
+		<img id="mathBravissimo" src="images/bravo.png" alt="Mathématix est fier de toi !" class="math-hero" style="display: none;">
+		<img id="mathOops" src="images/oups.png" alt="Tu feras mieux la prochaine fois !" class="math-hero" style="display: none;">
+
+	</main>
+
+    <footer>
+        <!-- On peut y glisser un message motivant ou éducatif -->
+    </footer>
+</body>
+</html>
