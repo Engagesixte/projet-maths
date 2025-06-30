@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
     <script>
-        window.onload = () => genereQuestion("sub");
+        window.onload = () => genereQuestion("sub100");
         function verifieSoustraction() {
-            verifieReponse("sub");
+            verifieReponse("sub100");
         }
     </script>
 </head>
@@ -47,7 +47,7 @@
         <input type="number" id="reponseEleve" placeholder="Ta réponse ici" autofocus>
         <button onclick="verifieSoustraction()">Vérifier</button>
         <p id="resultat"></p>
-        <button onclick="genereQuestion('sub')">Nouvelle question</button>
+        <button onclick="genereQuestion('sub100')">Nouvelle question</button>
         <p>Score : <span id="scoreAffiche">0</span> / <span id="compteurQuestions">0</span></p>
         <img id="mathBravissimo" src="images/bravo.png" alt="Mathématix est fier de toi !" class="math-hero" style="display: none;">
         <img id="mathOops" src="images/oups.png" alt="Tu feras mieux la prochaine fois !" class="math-hero" style="display: none;">
