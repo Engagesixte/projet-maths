@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Soustractions 0 à 20</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script>
+        window.onload = () => genereQuestion("sub20");
+        function verifieSoustraction20() {
+            verifieReponse("sub20");
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>Soustractions 0 à 20</h1>
+    </header>
+
+   <nav>
+        <a href="index.html">Accueil</a>
+        <div class="dropdown">
+    <a href="#" class="menu-btn">Additions ▼</a>
+    <div class="dropdown-content">
+        <a href="travaillonsAdditions20.html">Additions 0–20</a>
+        <a href="travaillonsAdditions100.html">Additions 0–100</a>
+    </div>
+    </div>
+        <div class="dropdown">
+    <a href="#" class="menu-btn">Soustractions ▼</a>
+    <div class="dropdown-content">
+        <a href="travaillonsSoustractionsSimples.html">Soustractions 0 à 10</a>
+        <a href="travaillonsSoustractionsSimples2.html">Soustractions 0 à 20</a>
+        <a href="travaillonsSoustractionsComplexes.html">Soustractions 0 à 100</a>
+    </div>
+</div>
+        <a href="travaillonsMultiplications.html">Multiplications</a>
+        <a href="travaillonsDivisions.html">Divisions</a>
+    </nav>
+
+    <main>
+        <h2>Exerce-toi avec des soustractions simples - Deuxième partie</h2>
+        <p><span id="p1"></span> − <span id="p2"></span> = ?</p>
+        <input type="number" id="reponseEleve" placeholder="Ta réponse ici" autofocus>
+        <button onclick="verifieSoustraction20()">Vérifier</button>
+        <p id="resultat"></p>
+        <button onclick="genereQuestion('sub20')">Nouvelle question</button>
+        <p>Score : <span id="scoreAffiche">0</span> / <span id="compteurQuestions">0</span></p>
+        <img id="mathBravissimo" src="images/bravo.png" class="math-hero" style="display: none;">
+        <img id="mathOops" src="images/oups.png" class="math-hero" style="display: none;">
+    </main>
+
+    <footer>
+        💡 Conseil : Si tu fais 17 - 9, commence par 17 - 10 = 7, puis ajoute 1 !
+    </footer>
+</body>
+</html>

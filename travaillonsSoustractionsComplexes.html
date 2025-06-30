@@ -2,9 +2,8 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Travaillons les soustractions simples</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <title>Travaillons les soustractions complexes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
     <script>
@@ -17,39 +16,44 @@
 
 <body>
     <header>
-        <h1>Travaillons les soustractions simple (0 à 10)</h1>
+        <h1>Travaillons les soustractions complexes</h1>
     </header>
 
-    <nav>
-        <a href="index.html" target="_blank">Accueil</a>
+   <nav>
+        <a href="index.html">Accueil</a>
         <div class="dropdown">
     <a href="#" class="menu-btn">Additions ▼</a>
     <div class="dropdown-content">
         <a href="travaillonsAdditions20.html">Additions 0–20</a>
         <a href="travaillonsAdditions100.html">Additions 0–100</a>
     </div>
+    </div>
+        <div class="dropdown">
+    <a href="#" class="menu-btn">Soustractions ▼</a>
+    <div class="dropdown-content">
+        <a href="travaillonsSoustractionsSimples.html">Soustractions 0 à 10</a>
+        <a href="travaillonsSoustractionsSimples2.html">Soustractions 0 à 20</a>
+        <a href="travaillonsSoustractionsComplexes.html">Soustractions 0 à 100</a>
+    </div>
 </div>
-
-        <a href="travaillonsSoustractions.html">Soustractions</a>
         <a href="travaillonsMultiplications.html">Multiplications</a>
         <a href="travaillonsDivisions.html">Divisions</a>
     </nav>
 
     <main>
-        <h2>Exerce-toi avec des soustractions simples</h2>
+        <h2>Sers-toi des soustractions sans jamais passer en dessous de zéro</h2>
         <p><span id="p1"></span> − <span id="p2"></span> = ?</p>
-        <input type="number" id="reponseEleve" placeholder="Ta réponse ici">
+        <input type="number" id="reponseEleve" placeholder="Ta réponse ici" autofocus>
         <button onclick="verifieSoustraction()">Vérifier</button>
         <p id="resultat"></p>
         <button onclick="genereQuestion('sub')">Nouvelle question</button>
         <p>Score : <span id="scoreAffiche">0</span> / <span id="compteurQuestions">0</span></p>
-		<img id="mathBravissimo" src="images/bravo.png" alt="Mathématix est fier de toi !" class="math-hero" style="display: none;">
-		<img id="mathOops" src="images/oups.png" alt="Tu feras mieux la prochaine fois !" class="math-hero" style="display: none;">
-
+        <img id="mathBravissimo" src="images/bravo.png" alt="Mathématix est fier de toi !" class="math-hero" style="display: none;">
+        <img id="mathOops" src="images/oups.png" alt="Tu feras mieux la prochaine fois !" class="math-hero" style="display: none;">
     </main>
 
     <footer>
-        <!-- On peut glisser une citation ou une astuce mathématique ici -->
+        💡 Astuce : Soustraire 9 ? Enlève 10 et ajoute 1, c’est plus rapide !
     </footer>
 </body>
 </html>
